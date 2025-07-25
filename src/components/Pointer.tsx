@@ -26,9 +26,9 @@ export default function Pointer(props: {
             <div className="absolute top-full left-full">
                 <div
                     className={twMerge(
-                        "inline-flex rounded-full font-bold text-sm bg-gradient-to-r from-blue-500 to-cyan-400 bg-[length:200%_200%] bg-[position:0%_50%] animate-gradientMove px-3 rounded-tl-none",
+                        "inline-flex rounded-full font-bold text-sm cursor-pointer bg-gradient-to-r from-blue-500 to-cyan-400 bg-[length:200%_200%] bg-[position:0%_50%] transition-transform duration-500 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,211,238,0.4)] animate-gradientMove px-3 rounded-tl-none",
                         color === "red-gradient" &&
-                            "bg-gradient-to-r from-orange-400 to-red-500 bg-[length:200%_200%] bg-[position:0%_50%] animate-gradientMove"
+                            "bg-gradient-to-r from-orange-400 to-red-500 bg-[length:200%_200%] bg-[position:0%_50%]  transition-transform duration-500 hover:scale-105 hover:shadow-[0_4px_20px_rgba(239,68,68,0.4)] animate-gradientMove"
                     )}
                 >
                     {name}
