@@ -1,4 +1,4 @@
-import React, { type HtmlHTMLAttributes } from "react";
+import React, { type ButtonHTMLAttributes } from "react";
 import { cva } from "class-variance-authority";
 
 const classes = cva(
@@ -11,6 +11,9 @@ const classes = cva(
                 secondary:
                     "border-white text-white bg-transparent hover:bg-white hover:text-neutral-950 hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] transform hover:scale-110 active:scale-95",
             },
+            size: {
+                sm: "h-10",
+            },
         },
     }
 );
@@ -18,14 +21,16 @@ const classes = cva(
 export default function Button(
     props: {
         variant: "primary" | "secondary";
-    } & HtmlHTMLAttributes<HTMLButtonElement>
+        size?: "sm";
+    } & ButtonHTMLAttributes<HTMLButtonElement>
 ) {
-    const { variant, className, ...otherProps } = props;
+    const { variant, className, size, ...otherProps } = props;
 
     return (
         <button
             className={classes({
                 variant,
+                size,
                 className,
             })}
             {...otherProps}
