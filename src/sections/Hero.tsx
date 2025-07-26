@@ -90,7 +90,7 @@ export default function Hero() {
                     <input
                         type="email"
                         placeholder="Enter your best email"
-                        className="bg-transparent px-4 md:flex-1 text-white placeholder-white/50 focus:outline-none focus:ring-0 focus:border-none"
+                        className="bg-transparent px-4 md:flex-1 text-white placeholder-white/50 focus:outline-none focus:ring-0 focus:border-none w-full"
                     />
 
                     <Button
