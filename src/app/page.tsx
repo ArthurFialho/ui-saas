@@ -3,6 +3,7 @@ import Hero from "@/sections/Hero";
 import Introduction from "@/sections/Introduction";
 import LogoTicker from "@/sections/LogoTicker";
 import Navbar from "@/sections/Navbar";
+import Integrations from "@/sections/Integrations";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <LogoTicker />
             <Introduction />
             <Features />
+            <Integrations />
         </>
     );
 }
