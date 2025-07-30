@@ -11,8 +11,8 @@ import { useEffect } from "react";
 export default function Hero() {
     const [leftDesignScope, leftDesignAnimate] = useAnimate();
     const [leftPointerScope, leftPointerAnimate] = useAnimate();
-    const [rightDesignScope, rightDesignAnimate] = useAnimate();
-    const [rightPointerScope, rightPointerAnimate] = useAnimate();
+    const [rightDesignScope, /*rightDesignAnimate*/] = useAnimate();
+    const [rightPointerScope, /*rightPointerAnimate*/] = useAnimate();
 
     useEffect(() => {
         leftDesignAnimate([
