@@ -42,8 +42,8 @@ export default function LogoTicker() {
                         }}
                         className="flex hover:stop flex-none gap-24 pr-24"
                     >
-                        {Array.from({ length: 2 }).map(() => (
-                            <Fragment>
+                        {Array.from({ length: 2 }).map((_, i) => (
+                            <Fragment key={i}>
                                 {logos.map((logo) => (
                                     <Image
                                         src={logo.image}
